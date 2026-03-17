@@ -1,0 +1,158 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #0f172a;
+  color: white;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px;
+  background: linear-gradient(to right, #2563eb, #06b6d4);
+}
+
+.profile {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+  animation: zoomIn 1.5s ease;
+}
+
+.hero h1 {
+  animation: fadeIn 2s ease-in;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+}
+
+h2 {
+  border-bottom: 2px solid #38bdf8;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skills-box span {
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 15px;
+  background: #1e293b;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.ee{
+text-decoration: none;
+ color: #416093;
+ 
+}
+.skills-box span:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+/* Projects */
+.project {
+  margin-top: 20px;
+  padding: 15px;
+  background: #1e293b;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+/* Contact links */
+#contact a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+}
